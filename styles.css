@@ -1,0 +1,110 @@
+:root {
+  --bg: #f9fafb;
+  --fg: #111827;
+  --muted: #6b7280;
+  --accent: #111827;
+  --card-bg: #ffffff;
+  --border: #e5e7eb;
+  --max-width: 760px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #e5e7eb 0, #f9fafb 40%, #f9fafb 100%);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.site-wrapper { min-height: 100vh; display: flex; flex-direction: column; }
+
+header {
+  border-bottom: 1px solid var(--border);
+  background: rgba(249, 250, 251, 0.85);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.site-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.site-subtitle {
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+}
+
+.intro {
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.post {
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  margin-bottom: 20px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+}
+
+.post-title { margin: 0 0 4px; font-size: 1.25rem; }
+.post-meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 12px; }
+
+.pill {
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #f9fafb;
+}
+
+.section-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+  margin-top: 14px;
+}
+
+.tldr {
+  padding: 10px 12px;
+  background: #f3f4f6;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+.body-text p { margin: 0 0 8px; }
+footer {
+  border-top: 1px solid var(--border);
+  padding: 12px 20px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-align: center;
+}
