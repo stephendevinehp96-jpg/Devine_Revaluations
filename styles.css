@@ -66,6 +66,14 @@ header {
   color: var(--muted);
 }
 
+.home-section-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+  margin: 18px 4px 8px;
+}
+
 .post {
   background: var(--card-bg);
   border-radius: 18px;
